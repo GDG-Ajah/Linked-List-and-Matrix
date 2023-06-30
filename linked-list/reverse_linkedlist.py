@@ -1,7 +1,7 @@
 from singly_linkedlist import SinglyLinkedList
 
 
-def reverse(nked_list):
+def reverse(linked_list):
     if linked_list.is_empty():
         return
     current_node = linked_list.head_node
