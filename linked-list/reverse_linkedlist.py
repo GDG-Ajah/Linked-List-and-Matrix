@@ -21,5 +21,5 @@ for i in range(1, 10):
     linked_list.insert_at_head(i)
 linked_list.print_list()
 
-linked_list.reverse()
+reverse(linked_list)
 linked_list.print_list()

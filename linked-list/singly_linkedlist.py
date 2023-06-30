@@ -127,19 +127,6 @@ class SinglyLinkedList(object):
             current_node = current_node.next_node
         return False
 
-    def reverse(self):
-        if self.is_empty():
-            return
-        current_node = self.head_node
-        prev_node = None
-        next_node = None
-        while current_node:
-            next_node = current_node.next_node
-            current_node.next_node = prev_node
-            prev_node = current_node
-            current_node = next_node
-        self.head_node = prev_node
-
     def print_list(self):
         if self.head_node is None:
             print("LinkedList is empty")
